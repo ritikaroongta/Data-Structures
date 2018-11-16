@@ -1,13 +1,13 @@
 
 #include <stdio.h>
-#include <limits.h> 
+#include <lib.h> 
 
-#define MAX_SIZE 20     
+     
 
 int main()
 {
     int arr[MAX_SIZE], size, i;
-    int max1, max2;
+    int max1, max2,MAX_SIZE=20;
 
     
     printf("Enter size of the array: ");
@@ -20,7 +20,7 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    max1 = max2 = INT_MIN;
+    max1 = max2 = 0;
 
     for(i=0; i<size; i++)
     {
